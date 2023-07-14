@@ -1,7 +1,7 @@
 <h1 align="center">Password Generator</h1>
 
 <p align="center">
-  <img alt="Password Generator" src=".github/PasswordGenerator.png">
+  <img alt="Password Generator" src="./public//PasswordGenerator.png">
 </p>
 
 ## 💣 Projeto
@@ -17,11 +17,3 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [JavaScript]
 
 Desenvolvido por iSz.
-
-type="number"
-name="length"
-id="length"
-class="inputlength"
-placeholder="Number"
-oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-maxlength="2"
