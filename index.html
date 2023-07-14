@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="./public/favicon.svg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Gerador de Senhas</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <script src="./src/index.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <span class="title">Gerador de Senhas</span>
+        <div class="newpassword">
+          <input
+            type="text"
+            class="displaypassword"
+            id="generatedisplay"
+            disabled
+          />
+          <button class="copybtn" id="copybtn">Copiar</button>
+        </div>
+        <div class="content">
+          <label for="length">
+            Numero de Caracteres:
+            <input
+              type="number"
+              name="length"
+              id="length"
+              class="inputlength"
+              placeholder="Valor"
+              oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              maxlength="2"
+            />
+          </label>
+          <label for="upper">
+            <input type="checkbox" name="Upper" id="upper" class="check" />
+            Letras Maiúsculas
+          </label>
+          <label for="lower">
+            <input type="checkbox" name="Lower" id="lower" class="check" />
+            Letras Minúsculas
+          </label>
+          <label for="numb">
+            <input type="checkbox" name="Numb" id="numb" class="check" />
+            Números
+          </label>
+          <label for="symb">
+            <input type="checkbox" name="Symb" id="symb" class="check" />
+            Símbolos
+          </label>
+          <div class="generate">
+            <button class="generatebtn" id="generatebtn">GERAR</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
